@@ -1,9 +1,9 @@
 import { useGSAP } from "@gsap/react";
-import { words } from "../../constants/index.js";
-import Button from "../Button.jsx";
-import HeroExperience from "../hero_models/HeroExperience.jsx";
+import { words } from "../constants/index.js";
+import Button from "../components/Button.jsx";
+import HeroExperience from "../components/hero_models/HeroExperience.jsx";
 import gsap from "gsap";
-import AnimatedCounter from "../AnimatedCounter.jsx";
+import AnimatedCounter from "../components/AnimatedCounter.jsx";
 
 const Hero = () => {
   useGSAP(() => {
@@ -13,6 +13,7 @@ const Hero = () => {
       { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" },
     );
   });
+
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
